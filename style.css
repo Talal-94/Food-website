@@ -48,7 +48,7 @@ header {
     text-transform: uppercase;
     padding-left: 24px;
     font-weight:600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.01em;
     cursor: pointer;
 }
 .left-nav nav ul li:hover {
@@ -204,4 +204,5 @@ header {
     padding-bottom: 2.2rem;
     max-width: 60%;
     font-size: 19px;
+    text-align: center;
 }

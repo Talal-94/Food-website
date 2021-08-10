@@ -1,64 +1,207 @@
-body 
-{
+body {
     margin: 0;
     font-family: Helvetica,Arial,sans-serif;
     font-style: normal;
     font-weight: 400;
     color: rgba(0,0,0,.87);
+    -moz-osx-font-smoothing: grayscale;
 }
-
-header 
-{
-    height: 101px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.1),0 2px 2px rgba(0,0,0,.06),0 0 2px rgba(0,0,0,.07)
+* {
+    box-sizing: border-box;
 }
-
-
-.header-container 
-{
+a {
+    color: black;
+}
+header {
+    height: 95px;
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1),0 2px 2px rgba(0,0,0,.06),0 0 2px rgba(0,0,0,.07);
+}
+/* /////////////// HEADER STUFF /////////////// */ 
+.header-container {
     max-width: 1440px;
     margin: 0 auto;
     padding-top: 1.5%;
-
-  
+    display: flex;
+    justify-content: space-between;
 }
-
-
-.logo 
-{
+.logo {
     height: 51px;
     width: 51px;
 }
-.logo img 
-{
+.logo img {
     height: 100%;
 }
-
-.left-nav
-{
+.left-nav {
     display: flex;
     height: 100%;
     align-items: center;
 }
-
-.left-nav nav ul
-{
+.left-nav nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
-
-.left-nav nav ul li 
-{
+.left-nav nav ul li {
     text-transform: uppercase;
     padding-left: 24px;
-    font-weight: 700;
+    font-weight:600;
     letter-spacing: 0.1em;
     cursor: pointer;
 }
-
-.left-nav nav ul li:hover
-{
+.left-nav nav ul li:hover {
     color: #008248;
+}
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+.find-store {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    font-weight: 600;
+}
+.find-store:hover {
+    color: #008248;
+    cursor: pointer;
+}
+.sign-in, .join-now {
+    padding: 7px 16px;
+    border: 1px solid;
+    border-radius: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    cursor: pointer;
+    text-align: center;
+}
+.sign-in {
+    margin-right: 16px;
+}
+.sign-in:hover {
+    background-color: rgba(0,0,0,.06);
+    transition: all .2s ease;
+}
+.join-now {
+    background-color: black;
+    color: white;
+    transition: all .2s ease;
+}
+.join-now:hover {
+    background-color: rgba(0,0,0,.7);
+    border-color: rgba(0, 0, 0, 0.7);
+}
+/* /////////////// ANNOUNCEMENTS STUFF /////////////// */ 
+.main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.📣  {
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    background-color: #d8e8e3;
+    margin-bottom: 32px;
+}
+.📣  span {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    max-width: 60%;
+    text-align: center;
+    font-size: 19px;
+    line-height: 1.75;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 500;
+}
+/* /////////////// SECTIONS STUFF /////////////// */ 
+.🌯 {
+    display: flex;
+    margin-bottom: 32px;
+}
+.🌯 .text {
+    width: 50%;
+    padding: 32px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e3932;
+    color: #ffffff;
+    line-height: 1.5;
+    letter-spacing: -.01em;
+    -moz-osx-font-smoothing: grayscale;
+}
+.🌯 .image {
+    width: 50%;
+    height: 625px;
+}
+.🌯 .image img {
+    height: 100%;
+}
+.text h3 {
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 19px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 1.5;
+
+}
+.text .cta {
+    display: inline-block;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+.cta:hover {
+    background-color: hsla(0,0%,100%,.12);
+    padding: 7px 20px;
+}
+
+.chill .text h1 {
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.chill .text h3 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+/* /////////////// SECTIONS STUFF /////////////// */ 
+.footer-container {
+    max-width: 1440px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    color: black;
+    background-color: #d8e8e3;
+    padding: 0;
+
+    
+}
+.footer-container ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 19px;
+    font-weight: 500;
+    display: flex;
+    -moz-osx-font-smoothing: grayscale;
+}
+.footer-container ul li {
+    padding-left: 24px;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    max-width: 60%;
+    font-size: 19px;
 }
